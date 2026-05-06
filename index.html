@@ -1,91 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruby on Rails Developer – Edward M.Alexander</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="hero">
-    <h1>Hi, I'm Edward</h1>
-    <p>Ruby on Rails developer based in Croydon, UK.</p>
-    <p>I build clean, maintainable web apps with Rails, Hotwire, and modern UI frameworks.</p>
-    <div class="hero-links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="#projects">View my projects</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edward Alexander – Ruby on Rails Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <main>
-    <section id="projects">
-      <h2>Featured Rails projects</h2>
-
-      <article class="project">
-        <h3>Blog Platform with Devise & Admin Dashboard</h3>
-        <p>
-          A full-featured blog built with Ruby on Rails 8, Devise authentication,
-          admin moderation, and responsive UI using Bootstrap/Bulma.
-        </p>
-        <ul>
-          <li>Role-based access (admin/user)</li>
-          <li>Comments, pagination, and analytics dashboard</li>
-          
-        </ul>
-        <div class="project-links">
-          <a href="https://your-blog-app-url.com" target="_blank">Live demo</a>
-          <a href="https://github.com/yourusername/blog-app" target="_blank">Source code</a>
-           <a href="https://your-blog-app-url.com" target="_blank">Live demo</a>
-          <a href="https://github.com/yourusername/blog-app" target="_blank">Source code</a>
-        </div>
-      </article>
-
-      <!-- Duplicate this block for more projects -->
-      <article class="project">
-        <h3>Project Name</h3>
-        <p>Short description of what it does and why it’s interesting.</p>
-        <ul>
-          <li>Key feature 1</li>
-          <li>Key feature 2</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://your-project-url.com" target="_blank">Live demo</a>
-          <a href="https://github.com/yourusername/project-repo" target="_blank">Source code</a>
-        </div>
-      </article>
-    </section>
-
-    <section id="stack">
-      <h2>Tech stack</h2>
-      <p><strong>Languages:</strong> Ruby, JavaScript</p>
-      <p><strong>Frameworks:</strong> Ruby on Rails, Hotwire (Turbo & Stimulus)</p>
-      <p><strong>Databases:</strong> PostgreSQL, SQLite</p>
-      <p><strong>Tools:</strong> Git, GitHub, RSpec, Docker (if true), CI/CD (GitHub Actions, etc.)</p>
-    </section>
-
-    <section id="about">
-      <h2>About me</h2>
+  <body>
+    <header class="hero">
+      <h1>Hi, I'm Edward Alexander</h1>
+      <p>Ruby on Rails developer based in Croydon, UK.</p>
       <p>
-        I'm a QA Analyst and Ruby on Rails developer focused on building practical, production-ready web applications.
-        I enjoy clean architecture, good tests, and thoughtful UI.
+        I build clean, maintainable web applications using Rails, Hotwire, and modern UI frameworks.
       </p>
-    </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:edward.m.alexander@hotmail.com">youremail@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/edwardmwinamilaalexander" target="_blank">github.com/yourusername</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ema24/" target="_blank">linkedin.com/in/yourprofile</a></p>
-    </section>
-  </main>
+      <div class="hero-links">
+        <a href="https://github.com/edwardmwinamilaalexander" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/edwardmalexander/" target="_blank">LinkedIn</a>
+        <a href="#projects">View my projects</a>
+      </div>
+    </header>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Your Name – Ruby on Rails Developer</p>
-  </footer>
+    <main>
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2>Featured Rails Projects</h2>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+        <!-- BLOG APP -->
+        <article class="project">
+          <h3>Blog Platform with Devise & Admin Dashboard</h3>
+          <p>
+            A full-featured blog built with Ruby on Rails 8, Devise authentication,
+            admin moderation tools, and a responsive UI using Bootstrap/Bulma.
+          </p>
+          <ul>
+            <li>Role-based access (admin/user)</li>
+            <li>Comments, pagination, analytics dashboard</li>
+            <li>Deployed on Render with PostgreSQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank">Live demo</a>
+            <a href="https://github.com/edwardmwinamilaalexander/blog-app" target="_blank">Source code</a>
+          </div>
+        </article>
+
+        <!-- TASKIDO -->
+        <article class="project">
+          <h3>Taskido – Rails 8 Task Management App</h3>
+          <p>
+            A clean and simple productivity app built with Ruby on Rails 8. Taskido lets
+            users create, update, and manage tasks with a lightweight, intuitive UI.
+          </p>
+          <ul>
+            <li>CRUD tasks with clean Rails controllers and views</li>
+            <li>Responsive layout using modern CSS</li>
+            <li>Simple, fast, beginner‑friendly Rails architecture</li>
+            <li>PostgreSQL-ready structure for deployment</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank">Live demo</a>
+            <a href="https://github.com/edwardmwinamilaalexander/taskido" target="_blank">
+              Source code
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- TECH STACK -->
+      <section id="stack">
+        <h2>Tech Stack</h2>
+        <p><strong>Languages:</strong> Ruby, JavaScript</p>
+        <p><strong>Frameworks:</strong> Ruby on Rails, Hotwire (Turbo & Stimulus)</p>
+        <p><strong>Databases:</strong> PostgreSQL, SQLite</p>
+        <p>
+          <strong>Tools:</strong> Git, GitHub, RSpec, Docker, GitHub Actions (CI/CD)
+        </p>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm a Ruby on Rails developer focused on building practical,
+          production-ready web applications. I enjoy clean architecture,
+          thoughtful UI, and writing code that’s easy to maintain and extend.
+        </p>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:edward.m.alexander@hotmail.com">edward.m.alexander@hotmail.com</a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/edwardmwinamilaalexander" target="_blank">
+            github.com/edwardmwinamilaalexander
+          </a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/edwardmalexander/" target="_blank">
+            linkedin.com/in/edwardmalexander
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Edward Alexander – Ruby on Rails Developer</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
