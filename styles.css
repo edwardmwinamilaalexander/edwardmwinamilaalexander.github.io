@@ -1,6 +1,6 @@
-/* ------------------------------
-   Global Styles
---------------------------------*/
+/* -----------------------------------
+   Global Styles & Variables
+----------------------------------- */
 :root {
   --bg: #f8f9fb;
   --text: #222;
@@ -26,9 +26,9 @@ body {
   padding-bottom: 4rem;
 }
 
-/* ------------------------------
+/* -----------------------------------
    Hero Section
---------------------------------*/
+----------------------------------- */
 .hero {
   text-align: center;
   padding: 5rem 1rem;
@@ -47,6 +47,38 @@ body {
   opacity: 0.95;
 }
 
+/* Passport-size placeholder */
+.passport-placeholder {
+  width: 140px;
+  height: 180px;
+  border-radius: 8px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* If you later add a real photo */
+.passport-photo {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+}
+
+/* Hero links */
 .hero-links {
   margin-top: 2rem;
   display: flex;
@@ -69,9 +101,9 @@ body {
   color: var(--accent-dark);
 }
 
-/* ------------------------------
+/* -----------------------------------
    Sections
---------------------------------*/
+----------------------------------- */
 section {
   padding: 3rem 1rem;
   max-width: 900px;
@@ -83,9 +115,9 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* ------------------------------
+/* -----------------------------------
    Project Cards
---------------------------------*/
+----------------------------------- */
 #projects {
   display: grid;
   gap: 2rem;
@@ -136,9 +168,9 @@ h2 {
   color: white;
 }
 
-/* ------------------------------
+/* -----------------------------------
    Contact Section
---------------------------------*/
+----------------------------------- */
 #contact a {
   color: var(--accent);
   text-decoration: none;
@@ -148,9 +180,9 @@ h2 {
   text-decoration: underline;
 }
 
-/* ------------------------------
+/* -----------------------------------
    Footer
---------------------------------*/
+----------------------------------- */
 footer {
   text-align: center;
   padding: 2rem 1rem;
