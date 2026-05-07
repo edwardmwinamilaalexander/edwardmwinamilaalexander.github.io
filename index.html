@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edward Alexander – Ruby on Rails Developer</title>
-    <link rel="stylesheet" href="styles.css?v=21" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="styles.css?v=30" />
   </head>
 
   <body>
@@ -44,7 +51,7 @@
     <main>
       <!-- PROJECTS -->
       <section id="projects">
-        <h2>Featured Rails Projects</h2>
+        <h2 class="projects-title">Featured Rails Projects</h2>
 
         <!-- BLOG APP -->
         <article class="project">
@@ -142,39 +149,39 @@
           thoughtful UI, and writing code that’s easy to maintain and extend.
         </p>
       </section>
-
-      <!-- CONTACT -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email:
-          <a href="mailto:edward.m.alexander@hotmail.com"
-            >edward.m.alexander@hotmail.com</a
-          >
-        </p>
-        <p>
-          GitHub:
-          <a href="https://github.com/edwardmwinamilaalexander" target="_blank"
-            >github.com/edwardmwinamilaalexander</a
-          >
-        </p>
-        <p>
-          LinkedIn:
-          <a
-            href="https://www.linkedin.com/in/edwardmalexander/"
-            target="_blank"
-            >linkedin.com/in/edwardmalexander</a
-          >
-        </p>
-      </section>
     </main>
 
     <!-- FOOTER -->
-    <footer>
-      <p>
-        &copy; <span id="year"></span> Edward Alexander – Ruby on Rails
-        Developer
-      </p>
+    <footer class="footer">
+      <div class="footer-icons">
+        <a
+          href="mailto:edward.m.alexander@hotmail.com"
+          class="footer-icon"
+          title="Email"
+        >
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a
+          href="https://github.com/edwardmwinamilaalexander"
+          target="_blank"
+          class="footer-icon"
+          title="GitHub"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/edwardmalexander/"
+          target="_blank"
+          class="footer-icon"
+          title="LinkedIn"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; <span id="year"></span> Edward Alexander
+      </div>
     </footer>
 
     <!-- JAVASCRIPT -->
