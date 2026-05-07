@@ -6,8 +6,30 @@
     <title>Edward Alexander – Ruby on Rails Developer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('dark-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  </script>
 
   <body>
+    <nav class="navbar">
+      <div class="nav-left">Edward Alexander</div>
+      <button id="dark-toggle">🌙</button>
+    </nav>
+
     <!-- HERO SECTION -->
     <header class="hero">
       <img
@@ -24,8 +46,12 @@
       </p>
 
       <nav class="hero-links">
-        <a href="https://github.com/edwardmwinamilaalexander" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/edwardmalexander/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/edwardmwinamilaalexander" target="_blank"
+          >GitHub</a
+        >
+        <a href="https://www.linkedin.com/in/edwardmalexander/" target="_blank"
+          >LinkedIn</a
+        >
         <a href="#projects">View my projects</a>
       </nav>
     </header>
@@ -39,8 +65,9 @@
         <article class="project">
           <h3>Blog Platform with Devise & Admin Dashboard</h3>
           <p>
-            A full-featured blog built with Ruby on Rails 8, Devise authentication,
-            admin moderation tools, and a responsive UI using Bootstrap/Bulma.
+            A full-featured blog built with Ruby on Rails 8, Devise
+            authentication, admin moderation tools, and a responsive UI using
+            Bootstrap/Bulma.
           </p>
           <ul>
             <li>Role-based access (admin/user)</li>
@@ -49,7 +76,11 @@
           </ul>
           <div class="project-links">
             <a href="#" target="_blank">Live demo</a>
-            <a href="https://github.com/edwardmwinamilaalexander/blog-app" target="_blank">Source code</a>
+            <a
+              href="https://github.com/edwardmwinamilaalexander/blog-app"
+              target="_blank"
+              >Source code</a
+            >
           </div>
         </article>
 
@@ -58,8 +89,8 @@
           <h3>Taskido – Rails 8 Task Management App</h3>
           <p>
             A clean and simple productivity app built with Ruby on Rails 8.
-            Taskido lets users create, update, and manage tasks with a lightweight,
-            intuitive UI.
+            Taskido lets users create, update, and manage tasks with a
+            lightweight, intuitive UI.
           </p>
           <ul>
             <li>CRUD tasks with clean Rails controllers and views</li>
@@ -69,7 +100,11 @@
           </ul>
           <div class="project-links">
             <a href="#" target="_blank">Live demo</a>
-            <a href="https://github.com/edwardmwinamilaalexander/taskido" target="_blank">Source code</a>
+            <a
+              href="https://github.com/edwardmwinamilaalexander/taskido"
+              target="_blank"
+              >Source code</a
+            >
           </div>
         </article>
       </section>
@@ -78,9 +113,14 @@
       <section id="stack">
         <h2>Tech Stack</h2>
         <p><strong>Languages:</strong> Ruby, JavaScript</p>
-        <p><strong>Frameworks:</strong> Ruby on Rails, Hotwire (Turbo & Stimulus)</p>
+        <p>
+          <strong>Frameworks:</strong> Ruby on Rails, Hotwire (Turbo & Stimulus)
+        </p>
         <p><strong>Databases:</strong> PostgreSQL, SQLite</p>
-        <p><strong>Tools:</strong> Git, GitHub, RSpec, Docker, GitHub Actions (CI/CD)</p>
+        <p>
+          <strong>Tools:</strong> Git, GitHub, RSpec, Docker, GitHub Actions
+          (CI/CD)
+        </p>
       </section>
 
       <!-- ABOUT -->
@@ -98,7 +138,9 @@
         <h2>Contact</h2>
         <p>
           Email:
-          <a href="mailto:edward.m.alexander@hotmail.com">edward.m.alexander@hotmail.com</a>
+          <a href="mailto:edward.m.alexander@hotmail.com"
+            >edward.m.alexander@hotmail.com</a
+          >
         </p>
         <p>
           GitHub:
@@ -108,7 +150,10 @@
         </p>
         <p>
           LinkedIn:
-          <a href="https://www.linkedin.com/in/edwardmalexander/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/edwardmalexander/"
+            target="_blank"
+          >
             linkedin.com/in/edwardmalexander
           </a>
         </p>
@@ -116,7 +161,10 @@
     </main>
 
     <footer>
-      <p>&copy; <span id="year"></span> Edward Alexander – Ruby on Rails Developer</p>
+      <p>
+        &copy; <span id="year"></span> Edward Alexander – Ruby on Rails
+        Developer
+      </p>
     </footer>
 
     <script>
